@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="camera-plate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A4B4F"/>
+      <stop offset=".12" stop-color="#242528"/>
+      <stop offset=".58" stop-color="#111214"/>
+      <stop offset="1" stop-color="#050607"/>
+    </linearGradient>
+    <linearGradient id="camera-neck" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#050506"/>
+      <stop offset=".2" stop-color="#343539"/>
+      <stop offset=".42" stop-color="#17181B"/>
+      <stop offset=".75" stop-color="#2D2E31"/>
+      <stop offset="1" stop-color="#070809"/>
+    </linearGradient>
+    <linearGradient id="camera-shell" x1=".12" y1=".08" x2=".9" y2=".88">
+      <stop offset="0" stop-color="#55565B"/>
+      <stop offset=".12" stop-color="#303136"/>
+      <stop offset=".32" stop-color="#17181C"/>
+      <stop offset=".64" stop-color="#090A0C"/>
+      <stop offset=".86" stop-color="#030405"/>
+      <stop offset="1" stop-color="#24262B"/>
+    </linearGradient>
+    <linearGradient id="camera-band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#64666B"/>
+      <stop offset=".16" stop-color="#303236"/>
+      <stop offset=".54" stop-color="#17181B"/>
+      <stop offset=".86" stop-color="#090A0B"/>
+      <stop offset="1" stop-color="#3B3D42"/>
+    </linearGradient>
+    <linearGradient id="camera-steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0EFEA"/>
+      <stop offset=".1" stop-color="#696C72"/>
+      <stop offset=".28" stop-color="#C8C9C8"/>
+      <stop offset=".5" stop-color="#55585F"/>
+      <stop offset=".76" stop-color="#D6D6D1"/>
+      <stop offset="1" stop-color="#4A4D53"/>
+    </linearGradient>
+    <radialGradient id="camera-smoke" cx="29%" cy="22%" r="82%">
+      <stop offset="0" stop-color="#68707E"/>
+      <stop offset=".18" stop-color="#282D39"/>
+      <stop offset=".5" stop-color="#0B0D12"/>
+      <stop offset=".84" stop-color="#020304"/>
+      <stop offset="1" stop-color="#252832"/>
+    </radialGradient>
+    <radialGradient id="camera-navy" cx="32%" cy="22%" r="82%">
+      <stop offset="0" stop-color="#7082AE"/>
+      <stop offset=".3" stop-color="#263B70"/>
+      <stop offset=".68" stop-color="#101A35"/>
+      <stop offset="1" stop-color="#050810"/>
+    </radialGradient>
+    <radialGradient id="camera-inner" cx="30%" cy="23%" r="80%">
+      <stop offset="0" stop-color="#303641"/>
+      <stop offset=".4" stop-color="#13161C"/>
+      <stop offset="1" stop-color="#030405"/>
+    </radialGradient>
+    <radialGradient id="camera-pupil" cx="30%" cy="22%" r="80%">
+      <stop offset="0" stop-color="#222B3C"/>
+      <stop offset=".4" stop-color="#090B10"/>
+      <stop offset="1" stop-color="#010203"/>
+    </radialGradient>
+    <radialGradient id="camera-led-glow">
+      <stop offset="0" stop-color="#3E9B4F" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#3E9B4F" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="camera-shadow" x="-.2" y="-.2" width="1.4" height="1.5">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="camera-led-glow-filter" x="-.8" y="-.8" width="2.6" height="2.6">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <!-- Soft cast shadow -->
+  <ellipse cx="525" cy="862" rx="286" ry="34" fill="#101114" opacity=".18" filter="url(#camera-shadow)"/>
+  <g id="camera">
+    <!-- Centered ceiling plate and neck -->
+    <g id="mount">
+      <path d="M352 142c0 22 72 40 160 40s160-18 160-40v14c0 22-72 40-160 40s-160-18-160-40z" fill="url(#camera-plate)" stroke="#090A0B" stroke-width="5"/>
+      <ellipse cx="512" cy="142" rx="160" ry="40" fill="url(#camera-plate)" stroke="#090A0B" stroke-width="6"/>
+      <path d="M376 136c43-18 229-18 272 0" fill="none" stroke="#B7B6B1" stroke-linecap="round" stroke-width="5" opacity=".5"/>
+      <path d="M466 170c8-17 84-17 92 0l12 72c-10 20-106 20-116 0z" fill="url(#camera-neck)" stroke="#090A0B" stroke-width="6"/>
+      <path d="M484 181c6-8 42-12 57-7" fill="none" stroke="#BFC0BE" stroke-linecap="round" stroke-width="3" opacity=".32"/>
+      <ellipse cx="512" cy="240" rx="67" ry="19" fill="#17181B" stroke="#62646A" stroke-width="4"/>
+    </g>
+    <!-- Straight-on rounded dome body -->
+    <g id="dome">
+      <path d="M512 221c185 0 333 130 347 305 14 171-137 306-347 306S161 697 165 526c4-175 162-305 347-305Z" fill="url(#camera-shell)" stroke="#050607" stroke-width="10"/>
+      <path d="M220 503c11-147 133-254 286-264" fill="none" stroke="#F0EFEA" stroke-linecap="round" stroke-width="16" opacity=".28"/>
+      <path d="M243 472c26-103 105-181 206-211" fill="none" stroke="#FBF5E1" stroke-linecap="round" stroke-width="8" opacity=".24"/>
+      <path d="M268 448c35-85 94-141 170-171" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-width="3" opacity=".23"/>
+      <path d="M815 418c19 49 27 104 20 157" fill="none" stroke="#8399CA" stroke-linecap="round" stroke-width="12" opacity=".23"/>
+    </g>
+    <!-- Exposed stand collar overlaps the shell to show a solid connection -->
+    <g id="stand-joint">
+      <path d="M468 212c10-13 78-13 88 0l8 48c-14 18-90 18-104 0z" fill="url(#camera-neck)" stroke="#090A0B" stroke-width="5"/>
+      <path d="M488 218c9-7 36-9 49-4" fill="none" stroke="#BFC0BE" stroke-linecap="round" stroke-width="3" opacity=".3"/>
+      <ellipse cx="512" cy="258" rx="58" ry="16" fill="#17181B" stroke="#62646A" stroke-width="3"/>
+    </g>
+    <!-- Centered charcoal lower rim follows the dome contour -->
+    <g id="base-band">
+      <path d="M178 615c54 105 178 178 334 184 159-6 282-79 338-184l-6 48c-65 105-185 166-332 172-147-6-267-67-330-172z" fill="url(#camera-band)" stroke="#08090A" stroke-width="6"/>
+      <path d="M190 625c68 97 181 151 322 157 141-6 254-60 322-157" fill="none" stroke="#999A9A" stroke-width="4" opacity=".55"/>
+      <path d="M202 653c73 84 177 126 310 132 133-6 237-48 310-132" fill="none" stroke="#020303" stroke-width="6" opacity=".82"/>
+      <circle cx="252" cy="643" r="10" fill="#0A0B0D" stroke="#8A8C91" stroke-width="4"/>
+      <circle cx="772" cy="643" r="10" fill="#0A0B0D" stroke="#8A8C91" stroke-width="4"/>
+    </g>
+    <!-- Centered circular lens with concentric glass layers -->
+    <g id="lens">
+      <circle cx="512" cy="548" r="174" fill="#08090B" stroke="url(#camera-steel)" stroke-width="13"/>
+      <circle cx="512" cy="548" r="158" fill="url(#camera-smoke)" stroke="#777A80" stroke-width="5"/>
+      <path d="M401 452c47-59 136-78 192-38" fill="none" stroke="#FBF5E1" stroke-linecap="round" stroke-width="7" opacity=".24"/>
+      <circle cx="512" cy="548" r="128" fill="url(#camera-navy)" stroke="#69789A" stroke-width="5"/>
+      <circle cx="512" cy="548" r="96" fill="url(#camera-inner)" stroke="#5F6470" stroke-width="4"/>
+      <circle cx="512" cy="548" r="82" fill="none" stroke="#A0A2A5" stroke-width="2" opacity=".48"/>
+      <circle cx="512" cy="548" r="71" fill="none" stroke="#737782" stroke-width="2" opacity=".55"/>
+      <circle cx="512" cy="548" r="58" fill="url(#camera-pupil)" stroke="#555B67" stroke-width="4"/>
+      <path d="M475 507c20-19 49-22 68-10" fill="none" stroke="#FBF5E1" stroke-linecap="round" stroke-width="7" opacity=".38"/>
+      <ellipse cx="484" cy="509" rx="12" ry="8" fill="#FBF5E1" opacity=".88"/>
+      <circle cx="487" cy="507" r="4" fill="#FFFFFF"/>
+      <ellipse cx="546" cy="584" rx="12" ry="5" fill="#6976D2" opacity=".7"/>
+      <circle cx="512" cy="548" r="24" fill="#010203" stroke="#252B37" stroke-width="3"/>
+      <circle cx="512" cy="548" r="10" fill="#000000"/>
+    </g>
+    <!-- Infrared sensor on the left and single green status LED -->
+    <g id="sensors">
+      <circle cx="286" cy="470" r="13" fill="#070809" stroke="#494B50" stroke-width="4"/>
+      <circle cx="286" cy="470" r="5" fill="#B2B4B7" opacity=".7"/>
+      <circle cx="738" cy="470" r="27" fill="url(#camera-led-glow)" filter="url(#camera-led-glow-filter)"/>
+      <circle cx="738" cy="470" r="9" fill="#07100A" stroke="#383A38" stroke-width="3"/>
+      <circle cx="738" cy="470" r="5.5" fill="#3E9B4F"/>
+      <circle cx="736" cy="468" r="1.8" fill="#E3F6E5"/>
+    </g>
+  </g>
+</svg>

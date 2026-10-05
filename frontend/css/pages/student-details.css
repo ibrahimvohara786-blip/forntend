@@ -1,0 +1,4 @@
+.student-profile { display: flex; align-items: center; gap: 20px; }
+.student-profile .avatar { width: 76px; height: 76px; font-size: 23px; }
+.attendance-ring { width: 112px; height: 112px; display: grid; place-items: center; border-radius: 50%; background: conic-gradient(var(--success) 0 94%, #e8dfc7 94%); }
+.attendance-ring span { width: 82px; height: 82px; display: grid; place-items: center; border-radius: 50%; background: var(--surface); font-size: 21px; font-weight: 700; }

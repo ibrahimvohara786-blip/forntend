@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1408 768" preserveAspectRatio="xMidYMid slice">
+  <g id="lines" fill="none" stroke="#D9C79A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+    <!-- Dense left-edge triangles and bottom-left cluster -->
+    <path d="M-14 660 43 525 37 573 57 615 105 642 132 720 180 700 300 570 200 505 135 320 43 525 200 505 300 570 105 642 57 615 37 573M-14 660 57 615 105 642 180 700 132 720 300 570M43 525 135 320 200 505M180 700 300 570 360 650 320 768 132 720M-20 768 57 615M0 410 43 525M135 320 260 390 200 505M300 570 390 470 260 390"/>
+    <path d="M180 700 260 748 320 768M105 642 180 700 220 768M37 573 0 550"/>
+    <!-- Dense top-right web -->
+    <path d="M1111 225 1150 142 1245 210 1290 105 1315 238 1388 276 1260 330 1245 210 1315 238 1150 142 1111 225 1260 330 1388 276M1150 142 1205 75 1290 105 1355 55 1388 120 1290 105 1245 210M1315 238 1388 350 1260 330 1350 420 1388 276"/>
+    <!-- Bottom-right cluster with long lines entering from the edge -->
+    <path d="M1180 600 1300 520 1388 640 1100 700 1180 600 1388 640 1300 520 1408 475M1100 700 1215 768 1388 640 1408 730M1180 600 1260 510 1300 520M1100 700 1040 768"/>
+    <!-- A few faint connections near the otherwise open center -->
+    <path d="M520 60 700 40 900 70M480 720 610 750 760 730 960 730" opacity=".3"/>
+  </g>
+  <g id="nodes" fill="#D9C79A" opacity=".52">
+    <!-- Left edge: mostly small joints with four larger soft nodes -->
+    <circle cx="0" cy="663" r="18"/><circle cx="43" cy="525" r="4"/><circle cx="37" cy="573" r="6"/><circle cx="57" cy="615" r="5"/>
+    <circle cx="105" cy="642" r="17"/><circle cx="132" cy="720" r="6"/><circle cx="135" cy="320" r="4"/><circle cx="200" cy="505" r="6"/>
+    <circle cx="300" cy="570" r="5"/><circle cx="180" cy="700" r="16"/><circle cx="360" cy="650" r="4"/><circle cx="320" cy="768" r="8"/>
+    <circle cx="260" cy="390" r="4"/><circle cx="390" cy="470" r="5"/>
+    <!-- Top-right constellation -->
+    <circle cx="1111" cy="225" r="6"/><circle cx="1150" cy="142" r="5"/><circle cx="1245" cy="210" r="9"/>
+    <circle cx="1290" cy="105" r="5"/><circle cx="1315" cy="238" r="6"/><circle cx="1388" cy="276" r="10"/>
+    <circle cx="1260" cy="330" r="5"/><circle cx="1205" cy="75" r="4"/><circle cx="1355" cy="55" r="5"/>
+    <circle cx="1388" cy="120" r="4"/><circle cx="1388" cy="350" r="5"/><circle cx="1350" cy="420" r="4"/>
+    <!-- Bottom-right cluster -->
+    <circle cx="1180" cy="600" r="5"/><circle cx="1300" cy="520" r="6"/><circle cx="1388" cy="640" r="9"/>
+    <circle cx="1100" cy="700" r="5"/><circle cx="1215" cy="768" r="7"/><circle cx="1260" cy="510" r="4"/>
+    <!-- Sparse center joints -->
+    <circle cx="520" cy="60" r="4" opacity=".45"/><circle cx="700" cy="40" r="5" opacity=".4"/>
+    <circle cx="900" cy="70" r="4" opacity=".4"/><circle cx="480" cy="720" r="5" opacity=".45"/>
+    <circle cx="960" cy="730" r="5" opacity=".4"/><circle cx="610" cy="750" r="4" opacity=".4"/>
+    <!-- Ring-only joints -->
+    <circle cx="245" cy="620" r="7" fill="none" stroke="#D9C79A" stroke-width="1.5"/>
+    <circle cx="1340" cy="185" r="6" fill="none" stroke="#D9C79A" stroke-width="1.5"/>
+  </g>
+</svg>

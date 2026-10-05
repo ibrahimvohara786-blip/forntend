@@ -1,0 +1,3 @@
+@import url('./variables.css');
+@media (max-width: 1050px) { .workspace { margin-left: 220px; } .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .workspace { margin-left: 0; } .page-content { padding: 22px 16px 36px; } .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .page-heading { align-items: stretch; flex-direction: column; } }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="badge-shadow" x="-.1" y="-.1" width="1.2" height="1.2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".14"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Cream circle badge for dark backgrounds -->
+  <circle cx="512" cy="512" r="488" fill="#FBF5E1" stroke="#E5DBC1" stroke-width="8" filter="url(#badge-shadow)"/>
+  <!-- Reuse the transparent camera icon without changing its angle or lighting -->
+  <image href="logo-camera.svg" x="0" y="0" width="1024" height="1024" preserveAspectRatio="xMidYMid meet"/>
+</svg>

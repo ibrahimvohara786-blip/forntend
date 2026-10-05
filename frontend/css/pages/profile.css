@@ -1,0 +1,4 @@
+.profile-layout { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(260px,.7fr); gap: 20px; }
+.profile-identity { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.profile-identity .avatar { width: 64px; height: 64px; font-size: 20px; }
+@media(max-width:760px) { .profile-layout { grid-template-columns: 1fr; } }

@@ -1,0 +1,20 @@
+.card { min-width: 0; padding: 22px; border: var(--border); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+.card h2, .card h3 { margin: 0 0 16px; font-size: 17px; }
+.card-dark { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.metric { display: grid; gap: 5px; }
+.metric strong { font-size: 30px; line-height: 1.1; }
+.metric span { color: var(--muted); font-size: 13px; }
+.card-dark .metric span { color: #d2cbb7; }
+.metric-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.seat-map { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; padding: 12px 4px; }
+.seat { aspect-ratio: 1; min-width: 18px; border: 1px solid rgba(20,17,12,.15); border-radius: 50%; background: var(--success); }
+.seat.absent { background: var(--danger); }
+.legend { display: flex; gap: 16px; color: var(--muted); font-size: 12px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 9px; height: 9px; border-radius: 50%; background: var(--success); }
+.legend .absent-dot { background: var(--danger); }
+.risk-item { display: grid; grid-template-columns: 40px minmax(0,1fr) 55px; align-items: center; gap: 12px; margin: 15px 0; }
+.risk-item strong { display: block; font-size: 13px; }
+.risk-item small { color: var(--muted); }
+.risk-meter { display: grid; gap: 5px; }
+.risk-meter b { justify-self: end; font-size: 12px; }
